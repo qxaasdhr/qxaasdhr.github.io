@@ -1,0 +1,236 @@
+
+body {
+    color: #000000;
+    background: #EEEEEE;
+    font-family: tahoma, sans-serif;
+    font-size: 9pt;
+    line-height: 1.5em;
+    margin: 40px 0;
+}
+
+#content {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 50px 60px;
+    text-align: justify;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 2px 2px 4px #AAAAAA;
+    -webkit-box-shadow: 2px 2px 4px #AAAAAA;
+    overflow: auto;
+}
+
+#header {
+  width: 100%;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+#name {
+  margin: 5px 0 15px 0;
+}
+
+
+h1 {
+  font-weight: lighter;
+  font-size: 22pt;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+
+#contact-info {
+  margin-bottom: 10px;
+}
+
+#contact-info a {
+  text-decoration: none;
+  color: #2a3ffb;
+}
+
+#contact-info table {
+  font-size: 9pt;
+}
+
+#contact-info table td {
+  padding-right: 10px;
+}
+
+
+#summary {
+  line-height: 1.3em;
+  font-size: 9pt;
+}
+
+.section {
+  margin: 10px 0;
+}
+
+
+
+.section-header {
+  overflow: auto;
+  overflow-y: hidden;
+  align-items: center;
+}
+
+.section-header h2 {
+  float: left;
+  color: #2a3ffb;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.section-header span {
+  height: 100%;
+}
+
+.section-header span hr {
+  margin-top: 10px;
+  color: #2a3ffb;
+  margin-bottom: 10px;
+}
+
+table.entry-header {
+  table-layout: fixed;
+}
+
+table.entry-header tr td:first-child {
+  width: 45%;
+}
+
+
+.entry ul {
+  padding-left: 15px;
+  margin-top: 0;
+}
+
+
+.entry ul li:first-child {
+  margin-top: 0px;
+}
+
+.entry li {
+  margin: 10px 0;
+}
+
+.entry {
+  margin-top: 10px;
+}
+
+
+.entry-header {
+  width: 100%;
+}
+
+.entry-header tr:first-child td:first-child {
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+.entry-header tr:first-child td:nth-of-type(2) {
+  font-weight: lighter;
+}
+
+.entry-header tr:first-child td:nth-of-type(3) {
+  text-align: right;
+  color: #505257;
+  width: 25%;
+}
+
+.entry-header tr:nth-of-type(2) td {
+  font-size: 8pt;
+  color: #505257;
+  font-style: italic;
+}
+
+.gpa {
+  font-style: italic;
+  font-size: 10pt;
+}
+
+li::marker {
+  font-size: 0.8em;
+}
+
+#quality-mark {
+  display: none;
+}
+
+
+table.table-list {
+  width: auto;
+  margin-top: 10px;
+  font-size: 10pt;
+}
+
+table.table-list td {
+  border-left: 2px solid #2a3ffb;
+  text-align: center;
+  padding: 0 10px;
+}
+
+table.table-list td:first-child {
+  border-left: none;
+  padding: 0 10px 0 0;
+}
+
+
+@media print {
+  body {
+      font-size: 10pt;
+      margin: 0;
+      padding: 0;
+      background: none;
+  }
+
+  #content {
+      -webkit-box-shadow: none;
+      border: none;
+  }
+
+  a, #contact-info a {
+      color: #000000;
+      text-decoration: underline;
+  }
+
+  #quality-mark {
+    display: block;
+    font-style: italic;
+    position: absolute;
+    bottom: 1mm;
+    right: 5mm;
+    color: #c8c8c8;
+    font-size: 8pt;
+  }
+}
+@page {
+  /* Change margins and paper size of PDF */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/@page */
+  size: A4 portrait;
+  margin: 0;
+}
+
+/* for cellphone? */
+/*
+@media screen and (max-width: 800px) {
+  body {
+      font-size: 16pt;
+      margin: 0;
+      padding: 0;
+      background: #FFFFFF !important;
+  }
+  #content {
+      margin: 0;
+      padding: 1em;
+      border: 0px;
+      background: none;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+  }
+}
+*/
